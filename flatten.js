@@ -19,16 +19,15 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-const without = function(array, itemsToRemove) {
-  for (let i = 0; i < itemsToRemove.length; i++) {
-    for (let j = 0; j < array.length; j++) {
-      if (itemsToRemove[i] === array[j]) {
-        array.splice(j, 1);
+const flatten = function(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (Array.isArray(array[i])) {
+      for (let j = 0; j < array[i].length; j++) {
+        array.splice(i + j, 0, array[i][j]);
       }
     }
   }
   return array;
 };
 
-assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
-assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
