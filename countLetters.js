@@ -21,5 +21,5 @@ const countLetters = function(phrase) {
     noSpaceCapsPhrase.splice(0,1);
     i++;
   }
-  return totalCount
+  return totalCount;
 };
