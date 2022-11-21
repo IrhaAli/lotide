@@ -21,7 +21,7 @@ const eqArrays = function(firstArray, secondArray) {
 
 const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length === Object.keys(object2).length) {
-    for (item in object1) {
+    for (const item in object1) {
       if (!eqArrays(object1[`${item}`], object2[`${item}`])) {
         return false;
       }
