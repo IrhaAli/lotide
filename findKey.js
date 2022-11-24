@@ -1,3 +1,4 @@
+//Checks if the two primitive values are equal
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -6,6 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+//Finds the first key that satistfies the callback function
 const findKey = function(object, callback) {
   for (let item in object) {
     if (callback(object[`${item}`])) {
@@ -15,6 +17,7 @@ const findKey = function(object, callback) {
   return undefined;
 };
 
+//Test Code
 assertEqual(findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },

@@ -1,3 +1,4 @@
+//Checks if the two primitive values are equal
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -6,6 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+//Counts the number of occurences in allItems of items denoted true in itemsToCount
 const countOnly = function(allItems, itemsToCount) {
   let totalItems = {};
   for (const item in itemsToCount) {
@@ -24,6 +26,7 @@ const countOnly = function(allItems, itemsToCount) {
   return totalItems;
 };
 
+//Test Code
 const firstNames = [
   "Karl",
   "Salima",

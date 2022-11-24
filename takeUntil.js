@@ -1,3 +1,4 @@
+//Checks if the two arrays are equal
 const eqArrays = function(firstArray, secondArray) {
   if (firstArray.length !== secondArray.length) {
     return false;
@@ -10,7 +11,7 @@ const eqArrays = function(firstArray, secondArray) {
   }
   return true;
 };
-
+//Consoles the approriate message based on the actual and expected arrays
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -19,6 +20,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
+//Returns items of an array until the callback function is satisfied
 const takeUntil = function(array, callback) {
   let result = [];
   for (let item of array) {
@@ -31,6 +33,7 @@ const takeUntil = function(array, callback) {
   return result;
 };
 
+//Test Code
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];

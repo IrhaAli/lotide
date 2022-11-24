@@ -1,3 +1,4 @@
+//Checks if the two arrays are equal
 const eqArrays = function(firstArray, secondArray) {
   if (firstArray.length !== secondArray.length) {
     return false;
@@ -10,7 +11,7 @@ const eqArrays = function(firstArray, secondArray) {
   }
   return true;
 };
-
+//Consoles the approriate message based on the actual and expected arrays
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -19,21 +20,24 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
+//Finds the indices of each unique letter found in the phrase
 const letterPositions = function(sentence) {
   let noSpaceCapsPhrase = sentence.toLowerCase().split("");
   let totalPositions = {};
   for (let i = 0; i < noSpaceCapsPhrase.length; i++) {
-    if (totalPositions[noSpaceCapsPhrase[i]] === undefined) {
-      totalPositions[noSpaceCapsPhrase[i]] = [i];
-      for (let j = i + 1; j < noSpaceCapsPhrase.length; j++) {
-        if (noSpaceCapsPhrase[j] === noSpaceCapsPhrase[i]) {
-          totalPositions[noSpaceCapsPhrase[i]].push(j);
+    if ((/[a-z]/).test(noSpaceCapsPhrase[i])) {
+      if (totalPositions[noSpaceCapsPhrase[i]] === undefined) {
+        totalPositions[noSpaceCapsPhrase[i]] = [i];
+        for (let j = i + 1; j < noSpaceCapsPhrase.length; j++) {
+          if (noSpaceCapsPhrase[j] === noSpaceCapsPhrase[i]) {
+            totalPositions[noSpaceCapsPhrase[i]].push(j);
+          }
         }
       }
     }
   }
-  delete totalPositions[" "];
   return totalPositions;
 };
 
+//Test Code
 console.log(letterPositions("lighthouse in the house"));

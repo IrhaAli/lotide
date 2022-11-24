@@ -1,3 +1,4 @@
+//Checks if the two arrays are equal
 const eqArrays = function(firstArray, secondArray) {
   if (firstArray.length !== secondArray.length) {
     return false;
@@ -10,7 +11,7 @@ const eqArrays = function(firstArray, secondArray) {
   }
   return true;
 };
-
+//Consoles the approriate message based on the actual and expected arrays
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -19,6 +20,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
+//Returns the middle of the array
 const middle = function(array) {
   let arrayLength = array.length;
   let halfArrayLength = arrayLength / 2;
@@ -31,6 +33,7 @@ const middle = function(array) {
   }
 };
 
+//Test Code
 assertArraysEqual(middle([1]), []);
 assertArraysEqual(middle([1, 2]), []);
 

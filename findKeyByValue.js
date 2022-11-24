@@ -1,3 +1,4 @@
+//Checks if the two primitive values are equal
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -6,6 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+//Finds the first key that has the given value
 const findKeyByValue = function(object, value) {
   for (const item in object) {
     if (object[`${item}`] === value) {
@@ -15,6 +17,7 @@ const findKeyByValue = function(object, value) {
   return undefined;
 };
 
+//Test Code
 const bestTVShowsByGenre = {sciFi: "The Expanse", comedy: "Brooklyn Nine-Nine", drama:  "The Wire"};
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");

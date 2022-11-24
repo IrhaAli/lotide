@@ -1,3 +1,4 @@
+//Checks if the two arrays are equal
 const eqArrays = function(firstArray, secondArray) {
   if (firstArray.length !== secondArray.length) {
     return false;
@@ -10,7 +11,7 @@ const eqArrays = function(firstArray, secondArray) {
   }
   return true;
 };
-
+//Consoles the approriate message based on the actual and expected arrays
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -19,6 +20,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
+//Removes the specified items from an array
 const without = function(array, itemsToRemove) {
   for (let i = 0; i < itemsToRemove.length; i++) {
     for (let j = 0; j < array.length; j++) {
@@ -30,5 +32,6 @@ const without = function(array, itemsToRemove) {
   return array;
 };
 
+//Test Code
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
