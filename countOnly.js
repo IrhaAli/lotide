@@ -10,16 +10,12 @@ const assertEqual = function(actual, expected) {
 //Counts the number of occurences in allItems of items denoted true in itemsToCount
 const countOnly = function(allItems, itemsToCount) {
   let totalItems = {};
-  for (const item in itemsToCount) {
+  for (const item of allItems) {
     if (itemsToCount[`${item}`] === true) {
-      totalItems[`${item}`] = 0;
-      for (let i = 0; i < allItems.length; i++) {
-        if (allItems[i] === `${item}`) {
-          totalItems[`${item}`] += 1;
-        }
-      }
-      if (totalItems[`${item}`] === 0) {
-        totalItems[`${item}`] = undefined;
+      if (totalItems[`${item}`] === undefined) {
+        totalItems[`${item}`] = 1;
+      }else {
+        totalItems[`${item}`] += 1;
       }
     }
   }

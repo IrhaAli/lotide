@@ -22,15 +22,17 @@ const assertArraysEqual = function(actual, expected) {
 
 //Returns the middle of the array
 const middle = function(array) {
+  let result = [];
   let arrayLength = array.length;
   let halfArrayLength = arrayLength / 2;
   if ((arrayLength === 1) || (arrayLength === 2)) {
     return [];
   } else if ((arrayLength % 2) === 0) {
-    return array.slice(halfArrayLength - 1, halfArrayLength + 1);
+    result.push(array[halfArrayLength - 1], array[halfArrayLength]);
   } else {
-    return [array[Math.floor(halfArrayLength)]];
+    result.push(array[Math.floor(halfArrayLength)]);
   }
+  return result;
 };
 
 //Test Code

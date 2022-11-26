@@ -28,14 +28,11 @@ const letterPositions = function(sentence) {
     if ((/[a-z]/).test(noSpaceCapsPhrase[i])) {
       if (totalPositions[noSpaceCapsPhrase[i]] === undefined) {
         totalPositions[noSpaceCapsPhrase[i]] = [i];
-        for (let j = i + 1; j < noSpaceCapsPhrase.length; j++) {
-          if (noSpaceCapsPhrase[j] === noSpaceCapsPhrase[i]) {
-            totalPositions[noSpaceCapsPhrase[i]].push(j);
-          }
+      } else {
+          totalPositions[noSpaceCapsPhrase[i]].push(i);
+      }
         }
       }
-    }
-  }
   return totalPositions;
 };
 

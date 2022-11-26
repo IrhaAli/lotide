@@ -11,20 +11,18 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(phrase) {
   let noSpaceCapsPhrase = phrase.toLowerCase().replaceAll(" ", "").split("");
   let totalCount = {};
-  while (noSpaceCapsPhrase.length > 0) {
-    if ((/[a-z]/).test(noSpaceCapsPhrase[0])) {
-      totalCount[noSpaceCapsPhrase[0]] = 1;
-      for (let j = 1; j < noSpaceCapsPhrase.length; j++) {
-        if (noSpaceCapsPhrase[j] === noSpaceCapsPhrase[0]) {
-          totalCount[noSpaceCapsPhrase[0]] += 1;
-          noSpaceCapsPhrase.splice(j,1);
-        }
+  for (const letter of noSpaceCapsPhrase) {
+    if ((/[a-z]/).test(letter)) {
+      if (totalCount[letter] === undefined) {
+        totalCount[letter] = 1;
+      } else {
+          totalCount[letter] += 1;
       }
     }
-    noSpaceCapsPhrase.splice(0,1);
   }
   return totalCount;
 };
 
 //Test Code
+console.log(countLetters("Lighthouse in the house"))
 console.log(countLetters("Hello, My name is Jamal. Every sixty seconds in Africa, a minute passes. Together we can stop this. Please, spread the word. Thank you was watching."));

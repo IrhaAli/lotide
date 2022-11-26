@@ -22,13 +22,12 @@ const assertArraysEqual = function(actual, expected) {
 
 //Removes the specified items from an array
 const without = function(array, itemsToRemove) {
-  for (let i = 0; i < itemsToRemove.length; i++) {
-    for (let j = 0; j < array.length; j++) {
-      if (itemsToRemove[i] === array[j]) {
-        array.splice(j, 1);
+  //use .includes to get rid off the outside for loop
+    for (let i = 0; i < array.length; i++) {
+      if (itemsToRemove.includes(array[i])) {
+        array.splice(i, 1);
       }
     }
-  }
   return array;
 };
 
