@@ -14,7 +14,7 @@ const countOnly = function(allItems, itemsToCount) {
     if (itemsToCount[`${item}`] === true) {
       if (totalItems[`${item}`] === undefined) {
         totalItems[`${item}`] = 1;
-      }else {
+      } else {
         totalItems[`${item}`] += 1;
       }
     }

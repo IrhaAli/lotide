@@ -23,11 +23,11 @@ const assertArraysEqual = function(actual, expected) {
 //Removes the specified items from an array
 const without = function(array, itemsToRemove) {
   //use .includes to get rid off the outside for loop
-    for (let i = 0; i < array.length; i++) {
-      if (itemsToRemove.includes(array[i])) {
-        array.splice(i, 1);
-      }
+  for (let i = 0; i < array.length; i++) {
+    if (itemsToRemove.includes(array[i])) {
+      array.splice(i, 1);
     }
+  }
   return array;
 };
 

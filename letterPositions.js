@@ -29,10 +29,10 @@ const letterPositions = function(sentence) {
       if (totalPositions[noSpaceCapsPhrase[i]] === undefined) {
         totalPositions[noSpaceCapsPhrase[i]] = [i];
       } else {
-          totalPositions[noSpaceCapsPhrase[i]].push(i);
+        totalPositions[noSpaceCapsPhrase[i]].push(i);
       }
-        }
-      }
+    }
+  }
   return totalPositions;
 };
 
