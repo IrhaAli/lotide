@@ -1,7 +1,7 @@
 {
   "name": "@irha/lotide",
   "version": "1.0.0",
-  "description": "Test all the functions of lotide",
+  "description": "A mini clone of the Lodash",
   "main": "index.js",
   "directories": {
     "test": "tests"
