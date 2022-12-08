@@ -1,4 +1,3 @@
-//Finds the indices of each unique letter found in the phrase
 const letterPositions = function(sentence) {
   let noSpaceCapsPhrase = sentence.toLowerCase().split("");
   let totalPositions = {};

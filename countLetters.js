@@ -1,4 +1,3 @@
-//Counts the number of each letter that occurs in the phrase
 const countLetters = function(phrase) {
   let noSpaceCapsPhrase = phrase.toLowerCase().replaceAll(" ", "").split("");
   let totalCount = {};

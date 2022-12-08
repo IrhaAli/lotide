@@ -1,4 +1,3 @@
-//Checks if the two arrays are equal
 const eqArrays = function(firstArray, secondArray) {
   if (firstArray.length !== secondArray.length) {
     return false;

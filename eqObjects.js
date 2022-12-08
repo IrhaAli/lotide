@@ -1,6 +1,5 @@
 const eqArrays = require('../lotide/eqArrays');
 
-//Checks if the two objects are equal
 const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length === Object.keys(object2).length) {
     for (const item in object1) {

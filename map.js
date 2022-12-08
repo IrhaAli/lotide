@@ -1,4 +1,3 @@
-//Returns an array with each element from original array modified by callbackFunction
 const map = function(array, callbackFunction) {
   const updatedArray = [];
   for (let element of array) {

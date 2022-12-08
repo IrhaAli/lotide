@@ -1,4 +1,3 @@
-//Counts the number of occurences in allItems of items denoted true in itemsToCount
 const countOnly = function(allItems, itemsToCount) {
   let totalItems = {};
   for (const item of allItems) {
