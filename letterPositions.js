@@ -1,12 +1,12 @@
 const letterPositions = function(sentence) {
-  let noSpaceCapsPhrase = sentence.toLowerCase().split("");
+  let noCapsPhrase = sentence.toLowerCase();
   let totalPositions = {};
-  for (let i = 0; i < noSpaceCapsPhrase.length; i++) {
-    if ((/[a-z]/).test(noSpaceCapsPhrase[i])) {
-      if (totalPositions[noSpaceCapsPhrase[i]] === undefined) {
-        totalPositions[noSpaceCapsPhrase[i]] = [i];
+  for (let i = 0; i < noCapsPhrase.length; i++) {
+    if ((/[a-z]/).test(noCapsPhrase[i])) {
+      if (totalPositions[noCapsPhrase[i]] === undefined) {
+        totalPositions[noCapsPhrase[i]] = [i];
       } else {
-        totalPositions[noSpaceCapsPhrase[i]].push(i);
+        totalPositions[noCapsPhrase[i]].push(i);
       }
     }
   }

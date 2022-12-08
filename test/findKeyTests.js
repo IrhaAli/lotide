@@ -9,7 +9,7 @@ describe("#findKey", () => {
     "elBulli":   { stars: 3 },
     "Ora":       { stars: 2 },
     "Akelarre":  { stars: 3 }
-  }
+  };
   it("returns valid for object that has key with 2 stars", () => {
     assert.equal(lotide.findKey(starPeople, x => x.stars === 2), "noma");
   });

@@ -14,6 +14,6 @@ describe("#countOnly", () => {
       "Fang",
       "Joe"
     ];
-    assert.isTrue(lotide.eqObjects(lotide.countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false }), {"Fang": 2, "Jason": 2}))
+    assert.isTrue(lotide.eqObjects(lotide.countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false }), {"Fang": 2, "Jason": 2}));
   });
 });

@@ -1,5 +1,5 @@
 const countLetters = function(phrase) {
-  let noSpaceCapsPhrase = phrase.toLowerCase().replaceAll(" ", "").split("");
+  let noSpaceCapsPhrase = phrase.toLowerCase().replaceAll(" ", "");
   let totalCount = {};
   for (const letter of noSpaceCapsPhrase) {
     if ((/[a-z]/).test(letter)) {

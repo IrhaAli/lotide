@@ -1,9 +1,9 @@
 const map = function(array, callbackFunction) {
-  const updatedArray = [];
+  const mappedArray = [];
   for (let element of array) {
-    updatedArray.push(callbackFunction(element));
+    mappedArray.push(callbackFunction(element));
   }
-  return updatedArray;
+  return mappedArray;
 };
 
 module.exports = map;
