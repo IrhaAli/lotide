@@ -1,4 +1,4 @@
-const lotide = require('../index');
+// const lotide = require('../index');
 
-lotide.assertEqual("Lighthouse Labs", "Bootcamp");
-lotide.assertEqual(1, 1);
+// lotide.assertEqual("Lighthouse Labs", "Bootcamp");
+// lotide.assertEqual(1, 1);
