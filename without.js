@@ -9,7 +9,7 @@ const without = function(array, itemsToRemove) {
     }
   }
   // returns the new array
-  return array;
+  return result;
 };
 
 module.exports = without;

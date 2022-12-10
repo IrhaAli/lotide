@@ -1,4 +1,4 @@
-const eqObjects = require('../lotide/eqObjects');
+const eqObjects = require('./eqObjects');
 
 const assertObjectsEqual = function(actual, expected) {
   if (eqObjects(actual, expected)) {

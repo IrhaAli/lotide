@@ -1,4 +1,4 @@
-const eqArrays = require('../lotide/eqArrays');
+const eqArrays = require('./eqArrays');
 
 const eqObjects = function(object1, object2) {
   // checks both objects have the same number of keys
