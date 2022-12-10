@@ -2,6 +2,9 @@ const lotide = require('../index');
 const assert = require('chai').assert;
 
 describe("#middle", () => {
+  it("returns [] for []", () => {
+    assert.deepEqual(lotide.middle([]), []);
+  });
   it("returns [] for [1]", () => {
     assert.deepEqual(lotide.middle([1]), []);
   });

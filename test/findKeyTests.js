@@ -2,7 +2,7 @@ const assert = require('chai').assert;
 const lotide = require('../index');
 
 describe("#findKey", () => {
-  let starPeople = {
+  const starPeople = {
     "Blue Hill": { stars: 1 },
     "Akaleri":   { stars: 3 },
     "noma":      { stars: 2 },
