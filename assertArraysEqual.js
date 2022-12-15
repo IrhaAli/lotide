@@ -1,4 +1,4 @@
-const eqArrays = require('../lotide/eqArrays');
+const eqArrays = require('./eqArrays');
 
 /**
  * Checks if two arrays are equal and consoles the appropriate message.

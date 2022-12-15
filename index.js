@@ -1,20 +1,20 @@
-const head   = require('../lotide/head');
-const tail   = require('../lotide/tail');
-const middle = require('../lotide/middle');
-const without = require('../lotide/without');
-const takeUntil = require('../lotide/takeUntil');
-const map = require('../lotide/map');
-const letterPositions = require('../lotide/letterPositions');
-const flatten = require('../lotide/flatten');
-const findKeyByValue = require('../lotide/findKeyByValue');
-const findKey = require('../lotide/findKey');
-const eqObjects = require('../lotide/eqObjects');
-const eqArrays = require('../lotide/eqArrays');
-const countOnly = require('../lotide/countOnly');
-const countLetters = require('../lotide/countLetters');
-const assertObjectsEqual = require('../lotide/assertObjectsEqual');
-const assertArraysEqual = require('../lotide/assertArraysEqual');
-const assertEqual = require('../lotide/assertEqual');
+const head   = require('./head');
+const tail   = require('./tail');
+const middle = require('./middle');
+const without = require('./without');
+const takeUntil = require('./takeUntil');
+const map = require('./map');
+const letterPositions = require('./letterPositions');
+const flatten = require('./flatten');
+const findKeyByValue = require('./findKeyByValue');
+const findKey = require('./findKey');
+const eqObjects = require('./eqObjects');
+const eqArrays = require('./eqArrays');
+const countOnly = require('./countOnly');
+const countLetters = require('./countLetters');
+const assertObjectsEqual = require('./assertObjectsEqual');
+const assertArraysEqual = require('./assertArraysEqual');
+const assertEqual = require('./assertEqual');
 
 module.exports = {
   head,
