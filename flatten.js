@@ -1,3 +1,10 @@
+/**
+ * Flattens the given (nested) array.
+ * @param {array} array the array to flatten.
+ * @return {array} flattened array to depth 2.
+ */
+
+
 const flatten = function(array) {
   // the array that will be returned
   const result = [];

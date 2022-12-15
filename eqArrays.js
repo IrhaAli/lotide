@@ -1,3 +1,10 @@
+/**
+ * Checks if the two arrays are equal.
+ * @param {array} firstArray the first array to compare.
+ * @param {array} secondArray the second array to compare.
+ * @return {boolean} true if arrays are equal and false otherwise.
+ */
+
 const eqArrays = function(firstArray, secondArray) {
   // ensures the two arrays are the same length
   if (firstArray.length !== secondArray.length) {

@@ -1,5 +1,12 @@
+/**
+ * Returns an array with each element from original array modified by callbackFunction.
+ * @param {array} array The original array.
+ * @param {function} callbackFunction the function to apply to each element.
+ * @return {array} the modified array.
+ */
+
 const map = function(array, callbackFunction) {
-  // the array that contains the elements being gone through the callback function
+  // the array that contains the elements that go through the callback function
   const mappedArray = [];
   // iterates through the array
   for (const element of array) {

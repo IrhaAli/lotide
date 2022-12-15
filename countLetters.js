@@ -1,3 +1,9 @@
+/**
+ * Counts the number of times each letter occurs in the given phrase.
+ * @param {phrase} phrase the given phrase.
+ * @return {object} key-value pairs where the key is the letter and the value is the count.
+ */
+
 const countLetters = function(phrase) {
   // new version of the phrase with no space or capital letters as they are irrelevant to the phrase
   const noSpaceCapsPhrase = phrase.toLowerCase().replaceAll(" ", "");

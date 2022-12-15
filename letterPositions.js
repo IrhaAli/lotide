@@ -1,3 +1,9 @@
+/**
+ * Finds the indices of each letter found in the phrase.
+ * @param {string} sentence the string to search through.
+ * @return {object} key-value pairs where the key is a letter and the value is an array of all the indices of that letter
+ */
+
 const letterPositions = function(sentence) {
   // takes the lowercase version of the sentence
   const noCapsPhrase = sentence.toLowerCase();

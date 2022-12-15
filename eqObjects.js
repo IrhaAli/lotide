@@ -1,5 +1,12 @@
 const eqArrays = require('./eqArrays');
 
+/**
+ * Checks if the two objects are equal.
+ * @param {object} object1 the first object to compare.
+ * @param {object} object2 the second object to compare.
+ * @return {boolean} true if objects are equal and false otherwise.
+ */
+
 const eqObjects = function(object1, object2) {
   // checks both objects have the same number of keys
   if (Object.keys(object1).length === Object.keys(object2).length) {

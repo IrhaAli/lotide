@@ -1,3 +1,10 @@
+/**
+ * Finds the first key that has the given value.
+ * @param {object} object the object to search.
+ * @param {value} value the value to check against.
+ * @return {string} the first key that has the value being looked for.
+ */
+
 const findKeyByValue = function(object, value) {
   // iterate through object
   for (const item in object) {
